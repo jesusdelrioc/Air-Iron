@@ -1,0 +1,19 @@
+.fondo {
+width: 1200px;
+height: 700px;
+margin: 0 auto;
+background-image: url("../img/fondo.png")
+}
+
+
+.cubo{
+    background:grey;
+    height:50px;
+    width: 50px;
+    -moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     border-radius: 50%;
+    position:absolute;
+}
+
+  
