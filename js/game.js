@@ -1,6 +1,7 @@
-function Game(){
-  this.time=time;
-}
+// function Game(){
+//   this.time=time;
+// }
 
-Game.prototype.time();
+// Game.prototype.time();
 
+console.log("hola");

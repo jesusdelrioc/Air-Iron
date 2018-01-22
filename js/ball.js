@@ -1,6 +1,6 @@
-function Ball(){
-  this.speed=speed;
-}
+// function Ball(){
+//   this.speed=speed;
+// }
 
-Ball.prototype.speed();
-
+// Ball.prototype.speed();
+console.log("hola");
