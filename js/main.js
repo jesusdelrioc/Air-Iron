@@ -1,31 +1,37 @@
 var miJugador
-$(document).ready(function() {
-    miJugador = new Jugador(50,250,10);
-    //var miJugador = new Jugador(930,250,20)
+var miJugador1
+$(document).ready(function () {
+    miJugador = new Jugador(50, 250, 15);
+    miJugador1 = new Jugador(870, 250, 20)
 
-    $(document).keydown(function(e){
-        switch(e.keyCode){
-            case 38 :
-            
-            miJugador.moveup();
-            break;
-        
-            
+    $(document).keydown(function (e) {
+        switch (e.keyCode) {
+            case 65:
+                miJugador.moveup();
+                break;
+
+            case 90:
+                miJugador.movedown();
+                break;
+
+            case 38:
+                miJugador1.moveup();
+                break;
+
             case 40:
-            miJugador.movedown();
-            break;
+                miJugador1.movedown();
+                break;
+
         }
-    
-        
-    
-        setInterval(update, 1000/60)
-        
+        setInterval(update, 1000/ 60)
+
     })
 });
 
-function update(){
+function update() {
     miJugador.render();
+    miJugador1.render();
 
 }
 
- 
+

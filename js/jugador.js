@@ -1,3 +1,4 @@
+
 function Jugador(x, y, speed){
   this.x= x;
   this.y=y;
