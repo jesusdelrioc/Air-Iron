@@ -1,19 +1,31 @@
+var miJugador
 $(document).ready(function() {
+    miJugador = new Jugador(50,250,10);
+    //var miJugador = new Jugador(930,250,20)
 
-    var miJugador = new Jugador(50,250,20);
-   
-   
-    // miJugador.drawJugador();
+    $(document).keydown(function(e){
+        switch(e.keyCode){
+            case 38 :
+            
+            miJugador.moveup();
+            break;
+        
+            
+            case 40:
+            miJugador.movedown();
+            break;
+        }
     
-    // $(document).keydown(function(e){
-    //     miJugador.move(e)
-    // });
- 
- });
-
- $(document).ready(function() {
-
-    var miJugador1 = new Jugador(930,250,20);
-
+        
+    
+        setInterval(update, 1000/60)
+        
+    })
 });
-   
+
+function update(){
+    miJugador.render();
+
+}
+
+ 
