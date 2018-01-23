@@ -1,29 +1,28 @@
-
-.negro{
-    background: black;
+body{
+    background:grey;
 }
-.fondo{
+#fondo{
 width: 1000px;
 height: 600px;
 margin: 0 auto;
-background:rgb(170, 169, 169);
+background:#fff;
 border: 10px solid black;
 position: relative;
-margin-top: 70px;
 }
 
 .jugador{
 background:black;
-border-radius: 50%;
-height:80px;
-width: 80px;
+/* border-radius: 50%; */
+height:100px;
+width: 20px;
 position: absolute;
 }
 
-.block{
+.bola{
     background: black;
     height: 50px;
     width: 50px;
+    border-radius: 50%;
 }
 
 
