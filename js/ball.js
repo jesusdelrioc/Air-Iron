@@ -16,10 +16,10 @@ Pelota.prototype.render = function () {
 
 Pelota.prototype.move = function () {
 
-    if (this.x >= $("#fondo").width() || this.x <= 0) {
+    if (this.x >= $("#fondo").width() -40|| this.x <= 0) {
         this.speedX *= -1;
     }
-    if (this.y >= $("#fondo").height() || this.y <= 0) {
+    if (this.y >= $("#fondo").height() -40|| this.y <= 0) {
         this.speedY *= -1;
     }
 
