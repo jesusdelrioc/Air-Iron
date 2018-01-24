@@ -1,10 +1,10 @@
-
 function Pelota(x, y, sX, sY, size) {
     this.x = x;
     this.y = y;
     this.speedX = sX;
     this.speedY = sY;
     this.size = size;
+    
     this.element = $('<div>').attr('id', "pelota");
     this.element.css({ top: this.y, left: this.x, position: 'absolute' });
     $('#fondo').append(this.element);
