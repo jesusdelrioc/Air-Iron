@@ -7,9 +7,6 @@ $(document).ready(function () {
     var jugador1 = new Jugador(900, 100, 25, [38, 40], size);
     var pelota = new Pelota(500, 300, 7, 7, size);
     var bloque = new Bloque(500, 150, 0, 15, size);
-    // var colliders_selector =  " #jugador " ;
-    // var obstacles_selector =  " #pelota " ;
-    // var hits =  $ (colliders_selector). colisión (objects_selector)
 
 
     $(document).keydown(function (e) {
@@ -28,33 +25,37 @@ $(document).ready(function () {
         bloque.render();
 
         checkCollision();
-        
     }
-    function checkCollision(){
-    if (jugador.x < pelota.x + pelota.width &&
-        jugador.x + jugador.width > pelota.x &&
-        jugador.y < pelota.y + pelota.height && 
-        jugador.y + jugador.height > pelota.y) {
 
-        pelota.switchDirection();
-    }}
+
+
+
+    function checkCollision() {
+        if (jugador.x < pelota.x + pelota.width &&
+            jugador.x + jugador.width > pelota.x &&
+            jugador.y < pelota.y + pelota.height &&
+            jugador.y + jugador.height > pelota.y) {
+            pelota.switchDirection();
+        }
+
+        if (jugador1.x < pelota.x + pelota.width &&
+            jugador1.x + jugador1.width > pelota.x &&
+            jugador1.y < pelota.y + pelota.height &&
+            jugador1.y + jugador1.height > pelota.y) {
+            pelota.switchDirection();
+        }
     
+        if (bloque.x < pelota.x + pelota.width && 
+            bloque.x + bloque.width > pelota.x && 
+            bloque.y < pelota.y + pelota.height &&
+            bloque.y + bloque.height > pelota.y) {
+            pelota.switchDirection();
+        }
+
+    }
+
+
 });
-
-
-
-        // if (pelota.x > jugador.x + jugador.width &&  pelota.x + pelota.width < jugador.x ) {
-        //     pelota.pelotaColision();
-        //     console.log("revota");
-        //     } 
-    
-
-       // if (jugador.x + jugador.y >= jugador.x + jugador.width + )
-    
-    
-   // }
-    
-
 
 
 
