@@ -6,8 +6,10 @@ $(document).ready(function () {
     var jugador = new Jugador(80, 400, 25, [65, 90], size);
     var jugador1 = new Jugador(900, 100, 25, [38, 40], size);
     var pelota = new Pelota(500, 300, 7, 7, size);
-    var bloque= new Bloque(500 , 150, 0 , 10, size );
-    // var bloque2= new Bloque(600, 450, 5 , 7,  size);
+    var bloque = new Bloque(500, 150, 0, 15, size);
+    // var colliders_selector =  " #jugador " ;
+    // var obstacles_selector =  " #pelota " ;
+    // var hits =  $ (colliders_selector). colisión (objects_selector)
 
 
     $(document).keydown(function (e) {
@@ -24,8 +26,36 @@ $(document).ready(function () {
         pelota.move();
         bloque.move();
         bloque.render();
+
+        checkCollision();
+        
     }
+    function checkCollision(){
+    if (jugador.x < pelota.x + pelota.width &&
+        jugador.x + jugador.width > pelota.x &&
+        jugador.y < pelota.y + pelota.height && 
+        jugador.y + jugador.height > pelota.y) {
+
+        pelota.switchDirection();
+    }}
+    
 });
+
+
+
+        // if (pelota.x > jugador.x + jugador.width &&  pelota.x + pelota.width < jugador.x ) {
+        //     pelota.pelotaColision();
+        //     console.log("revota");
+        //     } 
+    
+
+       // if (jugador.x + jugador.y >= jugador.x + jugador.width + )
+    
+    
+   // }
+    
+
+
 
 
 

@@ -7,7 +7,7 @@ function Jugador(x, y, speed, keys, size) {
 
 
   this.element = $("<div>").attr("id", "jugador");
-  this.element.css({ top: this.y, left: this.x });
+  this.element.css({ top: this.y, left: this.x , width:20, height: 100});
   $("#fondo").append(this.element);
 }
 

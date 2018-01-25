@@ -14,10 +14,14 @@ Pelota.prototype.render = function () {
     this.element.css({ top: this.y, left: this.x })
 }
 
+Pelota.prototype.pelotaColision = function(){
+    this.speedX *= -1;
+}
+
 Pelota.prototype.move = function () {
 
     if (this.x >= $("#fondo").width() -40|| this.x <= 0) {
-        this.speedX *= -1;
+        this.pelotaColision()
     }
     if (this.y >= $("#fondo").height() -40|| this.y <= 0) {
         this.speedY *= -1;

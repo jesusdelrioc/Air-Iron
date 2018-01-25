@@ -6,7 +6,7 @@ function Bloque(x, y, sX, sY, size) {
     this.size = size;
     
     this.element = $('<div>').attr('id', "bloque");
-    this.element.css({ top: this.y, left: this.x, position: 'absolute' });
+    this.element.css({ top: this.y, left: this.x, width:20, height:75, position: 'absolute' });
     $('#fondo').append(this.element);
 }
 

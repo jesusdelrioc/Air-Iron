@@ -14,22 +14,15 @@ margin-top:70px;
 #jugador{
 background:black;
 /* border-radius: 50%; */
-width: 20px;
-height: 100px;
 position: absolute;
 }
 
 #pelota{
     background: black;
-    height: 40px;
-    width: 40px;
     border-radius: 50%;
 }
 #bloque{
     background:grey;
-    border:1px solid rgb(68, 228, 46);
-    height: 75px;
-    width: 20px;
 }
 
 
