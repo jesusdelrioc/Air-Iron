@@ -4,12 +4,12 @@ function Bloque(x, y, sX, sY, size) {
     this.speedX = sX;
     this.speedY = sY;
     this.size = size;
-    this.width=20;
-    this.height = 75;
-    
-    this.element = $('<div>').attr('id', "bloque");
-    this.element.css({ top: this.y, left: this.x, width:20, height:75, position: 'absolute' });
-    $('#fondo').append(this.element);
+    this.width = 15;
+    this.height = 100;
+
+    this.element = $('<div>').attr('class', "bloque");
+    this.element.css({ top: this.y, left: this.x, width: 15, height: 100, position: 'absolute' });
+    $('.fondo').append(this.element);
 }
 
 Bloque.prototype.render = function () {
@@ -18,7 +18,7 @@ Bloque.prototype.render = function () {
 
 Bloque.prototype.move = function () {
 
-    if (this.y >= $("#fondo").height() -78|| this.y <= 0) {
+    if (this.y >= $(".fondo").height() - 100 || this.y <= 0) {
         this.speedY *= -1;
     }
 

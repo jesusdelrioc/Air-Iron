@@ -28,13 +28,11 @@ $(document).ready(function () {
     }
 
 
-
-
     function checkCollision() {
         if (jugador.x < pelota.x + pelota.width &&
             jugador.x + jugador.width > pelota.x &&
             jugador.y < pelota.y + pelota.height &&
-            jugador.y + jugador.height > pelota.y) {
+            jugador.y + jugador.height > pelota.y ) {
             pelota.switchDirection();
         }
 
@@ -44,9 +42,9 @@ $(document).ready(function () {
             jugador1.y + jugador1.height > pelota.y) {
             pelota.switchDirection();
         }
-    
-        if (bloque.x < pelota.x + pelota.width && 
-            bloque.x + bloque.width > pelota.x && 
+
+        if (bloque.x < pelota.x + pelota.width &&
+            bloque.x + bloque.width > pelota.x &&
             bloque.y < pelota.y + pelota.height &&
             bloque.y + bloque.height > pelota.y) {
             pelota.switchDirection();
