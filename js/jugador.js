@@ -37,4 +37,3 @@ Jugador.prototype.render = function () {
 
 
 
-

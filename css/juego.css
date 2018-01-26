@@ -1,13 +1,14 @@
 body{
-    background-image: url("https://balonmanomostoles.es/wp-content/uploads/2016/07/arbitro2.png");
+    background:grey;
     background-repeat: no-repeat;
+
     
 }
 .fondo{
 width: 1000px;
 height: 600px;
 margin: 0 auto;
-background-image: url("../img/fondoo.jpg");
+background-image: url("../img/fondo1.jpg");
 border: 5px solid black;
 position: relative;
 margin-top:70px;
@@ -26,11 +27,12 @@ position: absolute;
     position: absolute;
 }
 .bloque{
-  background:red;
+  background:black;
 }
 .startgame{
     text-align: center;
 }
+
 
 
 
