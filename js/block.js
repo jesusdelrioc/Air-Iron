@@ -4,11 +4,11 @@ function Bloque(x, y, sX, sY, size) {
     this.speedX = sX;
     this.speedY = sY;
     this.size = size;
-    this.width = 15;
+    this.width = 40;
     this.height = 100;
 
     this.element = $('<div>').attr('class', "bloque");
-    this.element.css({ top: this.y, left: this.x, width: 15, height: 100, position: 'absolute' });
+    this.element.css({ top: this.y, left: this.x, width: 40, height: 100, position: 'absolute' });
     $('.fondo').append(this.element);
 }
 

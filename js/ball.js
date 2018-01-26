@@ -22,14 +22,15 @@ Pelota.prototype.switchDirection = function () {
 
 Pelota.prototype.move = function () {
 
-    if (this.x >= $(".fondo").width() - 40 || this.x <= 0) {
+    if (this.x >= $(".fondo").width() - 40 || this.x <=0) {
         this.switchDirection()
-        // alert("game over");
+        alert("has muerto")
     }
     if (this.y >= $(".fondo").height() - 40 || this.y <= 0) {
         this.speedY *= -1;
     }
-
+    
+   
     this.x += this.speedX;
     this.y += this.speedY;
     this.element.css({ top: this.y, left: this.x });

@@ -2,8 +2,13 @@ body{
     background:grey;
     background-repeat: no-repeat;
 
-    
 }
+
+.startgame{
+    text-align: center;
+    border-radius: 25%;
+}
+
 .fondo{
 width: 1000px;
 height: 600px;
@@ -15,24 +20,35 @@ margin-top:70px;
 }
 
 .jugador{
-background:black;
-/* border-radius: 50%; */
+background-image: url("../img/minions.png");
+background-repeat: no-repeat;
+background-size: 40px;
 position: absolute;
 
 }
 
 .pelota{
-    background: black;
-    border-radius: 50%;
-    position: absolute;
+    background-image: url("../img/ironhack.png");
+    background-repeat: no-repeat;
+    background-size: 39px;
+    position: absolute; 
+
 }
 .bloque{
-  background:black;
-}
-.startgame{
-    text-align: center;
+  background-image: url("https://tstoaddicts.files.wordpress.com/2015/06/unlock_homer_referee.png");
+  background-repeat: no-repeat;
+  background-size: 40px;
 }
 
+button{
+    border-radius: 10px;;
+    border:2px solid black;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+button h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
 
 
