@@ -4,8 +4,8 @@ $(document).ready(function () {
     var size = { width: 1000, height: 600 };
 
 
-    var jugador = new Jugador(80, 300, 25, [65, 90], size);
-    var jugador1 = new Jugador(900, 300, 25, [38, 40], size);
+    var jugador = new Jugador(80, 250, 25, [65, 90], size);
+    var jugador1 = new Jugador(900, 250, 25, [38, 40], size);
     var pelota = new Pelota(500, 300, 7, 7, size);
     var bloque = new Bloque(500, 150, 0, 10, size);
 

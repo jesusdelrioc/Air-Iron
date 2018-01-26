@@ -24,9 +24,8 @@ Pelota.prototype.move = function () {
 
     if (this.x >= $(".fondo").width() - 40 || this.x <=0) {
         this.switchDirection()
-        alert("has muerto")
     }
-    if (this.y >= $(".fondo").height() - 40 || this.y <= 0) {
+    else if (this.y >= $(".fondo").height() - 40 || this.y <= 0) {
         this.speedY *= -1;
     }
     

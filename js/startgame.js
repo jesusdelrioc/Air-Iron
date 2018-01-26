@@ -1,7 +1,7 @@
 window.onload = function () {
     document.getElementById("start").onclick = function () {
         $(".stargame").hide();
-        // $(".container").show();
+        $(".container").show();
         $("button").hide();
         $("h1").hide();
         $(".fondo").show();
